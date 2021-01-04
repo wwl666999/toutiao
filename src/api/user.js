@@ -1,3 +1,4 @@
+import request from "@/utils/request";
 /**
  * 用户相关请求模块
  */
