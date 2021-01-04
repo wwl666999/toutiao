@@ -142,6 +142,9 @@ export default {
           });
           //关闭loading
           this.loginLoading = false;
+          //将接口返回的用户相关数据放到本地存储
+          //本地存储只能存字符串
+          window.localStorage.setItem('user',JSON.stringify(res.data.data))
           //跳转到首页
           // this.$router.push({
           //   name:home
