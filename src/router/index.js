@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Login from '../views/login'
 import Home from '../views/home'
 import Layout from '../views/layout'
+import Article from '../views/article'
+import Publish from '../views/publish'
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,16 @@ const routes = [
         path:'',//path为空会作为默认子路由
         name:'home',
         component:Home
+      },
+      {
+        path:'/article',
+        name:'article',
+        component:Article
+      },
+      {
+        path:'/publish',
+        name:'publish',
+        component:Publish
       }
     ]
   }
